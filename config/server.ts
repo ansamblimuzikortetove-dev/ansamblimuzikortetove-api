@@ -5,7 +5,7 @@ export default ({ env }) => ({
     keys: env.array('APP_KEYS'),
   },
   // Add these for better compatibility
-  url: env('PUBLIC_URL', ''),
+  url: env('PUBLIC_URL', 'http://localhost:1337'), // Make sure this is a valid URL
   proxy: env.bool('PROXY', false),
   cron: {
     enabled: env.bool('CRON_ENABLED', false),
